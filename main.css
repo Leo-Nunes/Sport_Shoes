@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Serif Display', serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 14px;
+}
+
+body {
+    background-color: rgba(0, 174, 255, 0.14);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid blue;
+    background-color: rgba(173, 255, 47, 0.1);
+}
+
+header h1 {
+    color: rgb(135, 220, 8);
+}
+
+
+form input, button {
+    border-color: blue;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+button {
+    background-color: rgba(7, 7, 253, 0.811);
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+    border-top: 4px solid transparent;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu li:hover {
+    border-color: greenyellow;
+}
+
+.clear {
+    clear: both;
+}
+
+.submenu {
+    display: none;
+    font-size: 12px;
+    list-style: none;
+    padding: 6px;
+    position: absolute;
+    top: 101%;
+    max-width: 200px;
+    background-color: greenyellow;
+}
+
+.image img {
+    width: 40%;
+    padding: 8px;
+    float: left;
+    max-width: 100%;
+}
+
+.image > h2 {
+    border-bottom: 1px solid blue;
+    margin-left: 40%;
+    padding: 10px;
+}
+
+.image p {
+    padding: 12px;
+}
+
+.conteudo main h2 {
+    border-bottom: 1px solid blue;
+    padding: 12px;
+}
+
+
+.conteudo td img {
+    width: 100%;
+    height: 220px;
+    padding: 12px 6px 0 0;
+    display: grid;
+    grid-row: inherit;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.conteudo button {
+    display: grid;
+    grid-row: 100%;
+    max-width: 100%;
+    width: 95%;
+    height: 20%s;
+    float: left;
+    padding: 8px;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.conteudo td h3 {
+    max-width: 100%;
+    padding: 4px;
+    font-size: 1.4em;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo strong {
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+@media screen and (max-width: 640px) {
+
+    .conteudo {
+        display: block;
+    }
+
+    .conteudo td {
+        max-width: 100%;
+        width: 100%; 
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    .container h1 {
+        padding: 10px;
+    }
+
+    .container form {
+        display: flex;
+    }
+
+    .container input {
+        padding: 2px;
+    }
+
+    .container button {
+        padding: 2px;
+        margin: 0 2px;
+    }
+
+    #submenu tr {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        margin: 0 0px 20px 10px;
+        max-width: 100%;
+    }
+
+    #submenu td {
+        max-width: 100%;
+        padding: 2px;
+    }
+
+    #submenu img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #submenu strong {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .menu {
+        align-items: center;
+    }
+
+    .image img {
+        display: flex;
+        max-width: 100%;
+        width: auto;
+    }
+
+    .image h2 {
+        margin-left: 20%;
+        display: flex;
+        margin-left: 0;
+    }
+
+    .conteudo td {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+    
+    .container {
+        max-width: 90%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .image img {
+        max-width: 100%;
+        width: 500px;
+        height: 370px;
+        display: block;
+    }
+
+    .image h2, p {
+        display: flex;
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #submenu h3, strong {
+        max-width: 100%;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 2px;
+    }
+
+    #submenu img {
+        width: 100%;
+        height: 200px;
+    }
+
+    #submenu button {
+        padding: 8px;
+    }
+
+
+    .conteudo {
+        max-width: 100%;
+        width: 100%;
+    }
+
+
+
+}
